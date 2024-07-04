@@ -55,11 +55,17 @@ header ul li a{
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
+    transition: 1s;
+}
+
+header ul li a:hover{
+    text-decoration: underline;
+    transition: 1s;
 }
 
 .banner{
     height: 100vh;
-    background-image: url(imagens/cabana.png);
+    background-image: url(imagens/cachoeira.png);
     background-position: 100% 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,3 +82,227 @@ header ul li a{
     font-size: 20px;
     color: white;
 }
+
+.secao1{
+    text-align: center;
+    padding: 40px;
+}
+
+.secao1 h1{
+    color: #A1A249;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.chalessecao1{
+    padding: 30px 250px 30px 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.txtchalesecao1{
+    text-align: left;
+}
+
+.txtchalesecao2{
+    text-align: right;
+}
+
+.txtchalesecao1 h2, .txtchalesecao2 h2{
+    color: #A1A249;
+    font-size: 30px;
+}
+
+.txtchalesecao1 p, .txtchalesecao2 p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.txtchalesecao1 button, .txtchalesecao2 button{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.txtchalesecao1 button:hover, .txtchalesecao2 button:hover{
+    background-color: #FDF0DC;
+    color: #A1A249;
+}
+
+.chalessecao2{
+    padding: 30px 290px 30px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.chalessecao3{
+    padding: 30px 270px 30px 260px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.secao2{
+    background-color: #7F4F24;
+    width: 100%;
+    height: 650px;
+    padding: 60px;
+    text-align: center;
+}
+
+.secao2 h2{
+    padding-bottom: 10px;
+}
+
+.secao3{
+    padding: 90px;
+}
+
+.secao3-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px;
+}
+
+.secao3-1txt{
+    text-align: center;
+}
+
+.secao3-1txt h2{
+    font-size: 30px;
+    color:#A1A249;
+}
+
+.secao3-1txt p{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.secao3-1txt button{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.secao3-1txt button:hover{
+    background-color: #FDF0DC;
+    color: #A1A249;
+}
+
+.secao3-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.secao3-2 .banner1, .secao3-2 .banner3{
+    background-color: rgb(161,162,73,0.5);
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.secao3-2 .banner1 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.secao3-2 .banner1 p{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.secao3-2 .banner2{
+    background-color: #A1A249;
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.secao3-2 .banner2 h3, .secao3-2 .banner3 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.secao3-2 .banner2 p, .secao3-2 .banner3 p{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rodape{
+    background-color: #7F4F24;
+    display: flex;
+    height: 250px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    padding: 0 400px 0 310px;
+    font-size: smaller;
+}
+
+.rodape .titulorodapedois{
+    color: #fff;
+}
+
+.rodape .nav{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rodape .nav .eventos{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .nav .eventos:hover{
+    transform: scale(1.1);
+}
+
+.rodape .redes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redes .sociais{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .redes .sociais:hover{
+    transform: scale(1.1);
+}
+
