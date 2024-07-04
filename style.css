@@ -30,6 +30,15 @@ header{
     top:0;
     left:0;
     transition: 0.5s;
+    z-index: 9999;
+}
+
+.logo-menu{
+    transition: 0.3s ease-in-out
+}
+
+.logo-menu:hover{
+    transform: scale(1.1);
 }
 
 header.rolagem{
@@ -51,36 +60,85 @@ header ul li{
 }
 
 header ul li a{
+    position: relative;
     color: white;
     text-decoration: none;
     font-size: 17px;
     font-weight: 500;
-    transition: 1s;
 }
 
-header ul li a:hover{
-    text-decoration: underline;
-    transition: 1s;
+header ul li a::after{
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
 
-.banner{
-    height: 100vh;
-    background-image: url(imagens/cachoeira.png);
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: cover;
+header ul li a:hover:after{
+    width: 100%;
+}
 
+.slide-box.primeiro{
     display: flex;
-    gap: 20px;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
     justify-content: center;
 }
 
-.banner p{
-    font-weight: 600;
+.slide-box.primeiro p{
     font-size: 20px;
+    font-weight: 400;
+    color:white;
+}
+
+.slide-box.primeiro input{
+    border: #ffffff;
+}
+
+.slide-box.terceiro{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-box.terceiro h1{
+    font-size: 40px;
+    font-weight: 600;
     color: white;
+}
+
+.slide-box.terceiro button{
+    width: 160px;
+    height: 55px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.slide-box.terceiro button:hover{
+    background-color: white;
+    color:#A1A249
+}
+
+.slide-box.quarto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   
 }
 
 .secao1{

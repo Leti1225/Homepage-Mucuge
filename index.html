@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slide.css">
     <title>Document</title>
 </head>
 <body>
     <header id="header">
         <div class="container">
             <div class="flex">
-                <a href="#"><img src="imagens/logo (menu).png" alt=""></a>
+                <a href="#"><img class="logo-menu" src="imagens/logo (menu).png" alt=""></a>
                 <nav>
                     <ul>
                         <li><a href="#">TOUR TURISTICO</a></li>
@@ -24,20 +25,58 @@
         </div>
     </header>
 
-    <section class="banner">
-        <img src="imagens/logo (grande).png" alt="">
-        <p>DESCUBRA AS MAIS DIVERSAS ATRAÇÕES TURISITCAS</p>
+    <section class="slider">
+        <div class="slider-content">
+            <input type="radio" name="btn-radio" id="radio1">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+            <input type="radio" name="btn-radio" id="radio4">
+
+            <div class="slide-box primeiro">
+                <img src="imagens/logo (grande).png" alt="">
+                <p>No nosso guia, você encontrará todas as informações sobre <br> um destino de ecoturismo consolidado na Bahia: Mucugê</p>
+                <input type="text" name="pesquisar">
+            </div>
+            <div class="slide-box segundo">
+                <h2>Trilhas que se encaixam <br>no que você mais <br> procura</h2>
+                <a href=""><button>Veja mais</button></a>
+            </div>
+            <div class="slide-box terceiro">
+                <h1>Aproveite a culinária baiana no restaurante Fuá</h1>
+                <a href=""><button>Saiba mais</button></a>
+            </div>
+            <div class="slide-box quarto">
+                <h1>Aproveite a <br> gastronomia local!</h1>
+                <p>Aproveite um bom <br>vinho com founde <br>no frio de Mucugê!</p>
+                <a href=""><button>Saiba mais</button></a>
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+
+        </div>
     </section>
 
     <section class="secao1">
 
-        <h1>EM MUCUGÊ, VOCÊ TERÁ MOMENTOS MEMORÁVEIS COM <br>TRILHAS, FESTIVAIS E MUITO TURISMO DE EXPERIÊNCIA!</h1>
+        <h1 class="efeito-txt-secao1">EM MUCUGÊ, VOCÊ TERÁ MOMENTOS MEMORÁVEIS COM <br>TRILHAS, FESTIVAIS E MUITO TURISMO DE EXPERIÊNCIA!</h1>
 
         <div class="secao1-1">
             <div class="imgsecao1-1">
                 <img src="imagens/chalesecao1.png" alt="">
             </div>
-            <div class="divisoria">
+            <div class="divisoria efeito-divisoria">
                 <img src="imagens/divisoria.png" alt="">
             </div>
             <div class="txtsecao1-1e1-3">
@@ -146,7 +185,7 @@
 
     <footer class="rodape">
         <div class="portaltitulo">
-            <img src="imagens/logo (menu).png" alt="">
+            <img class="logo-menu" src="imagens/logo (menu).png" alt="">
         </div>
         <div class="nav">
             <a class="eventos" href="">Pontos turísticos</a>
@@ -175,5 +214,6 @@
     </footer>
 
     <script src="home.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>
