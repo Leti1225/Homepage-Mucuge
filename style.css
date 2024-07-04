@@ -94,32 +94,32 @@ header ul li a:hover{
     font-size: 30px;
 }
 
-.chalessecao1{
+.secao1-1{
     padding: 30px 250px 30px 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.txtchalesecao1{
+.txtsecao1-1e1-3{
     text-align: left;
 }
 
-.txtchalesecao2{
+.txtsecao1-2{
     text-align: right;
 }
 
-.txtchalesecao1 h2, .txtchalesecao2 h2{
+.txtsecao1-1e1-3 h2, .txtsecao1-2 h2{
     color: #A1A249;
     font-size: 30px;
 }
 
-.txtchalesecao1 p, .txtchalesecao2 p {
+.txtsecao1-1e1-3 p, .txtsecao1-2 p {
     font-size: 20px;
     padding: 10px 0;
 }
 
-.txtchalesecao1 button, .txtchalesecao2 button{
+.txtsecao1-1e1-3 button, .txtsecao1-2 button{
     padding: 10px;
     margin-top: 10px;
     border: 1px solid #A1A249;
@@ -131,19 +131,19 @@ header ul li a:hover{
     font-weight: 500;
 }
 
-.txtchalesecao1 button:hover, .txtchalesecao2 button:hover{
+.txtsecao1-1e1-3 button:hover, .txtsecao1-2 button:hover{
     background-color: #FDF0DC;
     color: #A1A249;
 }
 
-.chalessecao2{
+.secao1-2{
     padding: 30px 290px 30px 250px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.chalessecao3{
+.secao1-3{
     padding: 30px 270px 30px 260px;
     display: flex;
     align-items: center;
@@ -261,48 +261,95 @@ header ul li a:hover{
 .rodape{
     background-color: #7F4F24;
     display: flex;
-    height: 250px;
-    justify-content: space-between;
+    height: 35vh;
     align-items: center;
-    gap: 5vw;
-    padding: 0 400px 0 310px;
-    font-size: smaller;
-}
-
-.rodape .titulorodapedois{
-    color: #fff;
+    justify-content: center;
+    padding-right: 10px;
 }
 
 .rodape .nav{
     display: flex;
+    align-items: center;
+    margin-left: 8vw;
     flex-direction: column;
     gap: 10px;
+    font-size: 15px;
 }
 
 .rodape .nav .eventos{
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-}
+}/*animação eventos*/
 
 .rodape .nav .eventos:hover{
     transform: scale(1.1);
+}/*animação eventos*/
+
+.rodape .titulo2{
+    color: #ffffff;
+    font-size: 18px;
 }
 
 .rodape .redes{
     display: flex;
+    margin-top: -2vh;
+    margin-left: 8vw;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     transition: 0.3s ease-in-out;
+    font-size: 15px;
 }
 
 .rodape .redes .sociais{
     color: #fff;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-}
+}/*animação redes*/
 
 .rodape .redes .sociais:hover{
     transform: scale(1.1);
+}/*animação redes*/
+
+.rodape .png1{
+    display: flex;
+    align-items: center;
+    width: 20%; 
+    height: 20%;
+    flex-direction: column;
 }
 
+.rodape .titulo3{
+    color: #fff;
+    font-size: 18px;
+}
+
+.rodape .contatos{
+    display: flex;
+    align-items: center;
+    margin-left: 7vw;
+    flex-direction: column;
+    margin-top: -10vh;
+    gap: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape .contatos .ctt{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    font-size: 15px;
+}/*animação contatos*/
+
+.rodape .contatos .ctt:hover{
+    transform: scale(1.1);
+}/*animação contatos*/
+
+.rodape .png2{
+    display: flex;
+    align-items: center;
+    width: 15%; 
+    height: 20%;
+    flex-direction: column;
+}
