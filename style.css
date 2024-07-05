@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     height: 500vh;
     background-color: #FDF0DC;
@@ -88,10 +92,11 @@ header ul li a:hover:after{
     gap: 15px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .slide-box.primeiro p{
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     color:white;
 }
@@ -99,6 +104,50 @@ header ul li a:hover:after{
 .slide-box.primeiro input{
     border: #ffffff;
 }
+
+.slide-box.segundo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    padding-bottom: 170px;
+    padding-right: 150px;
+    justify-content: center;
+}
+
+.segundo-txt h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.segundo-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.segundo-txt button{
+    width: 160px;
+    height: 55px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.segundo-txt button:hover{
+    background-color: white;
+    color:#A1A249;
+}
+
 
 .slide-box.terceiro{
     display: flex;
@@ -136,9 +185,37 @@ header ul li a:hover:after{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-   
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 70px;
+    color: white;
+}
+
+.slide-box.quarto h1{
+    font-size: 50px;
+}
+
+.slide-box.quarto p{
+    font-size: 30px;
+}
+
+.slide-box.quarto button{
+    width: 160px;
+    height: 55px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.slide-box.quarto button:hover{
+    background-color: white;
+    color:#A1A249
 }
 
 .secao1{
@@ -314,6 +391,10 @@ header ul li a:hover:after{
     color: white;
     font-weight: 500;
     font-size: 18px;
+}
+
+.secao3img img{
+    border-radius: 30px;
 }
 
 .rodape{
