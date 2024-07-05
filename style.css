@@ -89,20 +89,24 @@ header ul li a:hover:after{
 .slide-box.primeiro{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.slide-box.primeiro p{
-    font-size: 22px;
-    font-weight: 400;
-    color:white;
-}
-
 .slide-box.primeiro input{
-    border: #ffffff;
+    width: 500px;
+    height: 50px;
+    border:none;
+    border-radius: 30px;
+    font-size: 20px;
+    padding: 0 20px;
+    background-image: url(imagens/lupa.png);
+    background-repeat: no-repeat;
+    background-position: calc(15px);
+    background-size: 1.7em;
+    padding-left: 3em;
 }
 
 .slide-box.segundo {
@@ -130,7 +134,7 @@ header ul li a:hover:after{
     text-align: center;
 }
 
-.segundo-txt button{
+.segundo-txt button, .slide-box.terceiro button, .slide-box.quarto button{
     width: 160px;
     height: 55px;
     border: 1px solid #A1A249;
@@ -138,16 +142,15 @@ header ul li a:hover:after{
     background-color: #A1A249;
     color: white;
     transition: 0.5s;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     transition: 0.5s;
 }
 
-.segundo-txt button:hover{
+.segundo-txt button:hover, .slide-box.terceiro button:hover, .slide-box.quarto button:hover{
     background-color: white;
     color:#A1A249;
 }
-
 
 .slide-box.terceiro{
     display: flex;
@@ -161,24 +164,6 @@ header ul li a:hover:after{
     font-size: 40px;
     font-weight: 600;
     color: white;
-}
-
-.slide-box.terceiro button{
-    width: 160px;
-    height: 55px;
-    border: 1px solid #A1A249;
-    border-radius: 20px;
-    background-color: #A1A249;
-    color: white;
-    transition: 0.5s;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.5s;
-}
-
-.slide-box.terceiro button:hover{
-    background-color: white;
-    color:#A1A249
 }
 
 .slide-box.quarto{
@@ -198,24 +183,6 @@ header ul li a:hover:after{
 
 .slide-box.quarto p{
     font-size: 30px;
-}
-
-.slide-box.quarto button{
-    width: 160px;
-    height: 55px;
-    border: 1px solid #A1A249;
-    border-radius: 20px;
-    background-color: #A1A249;
-    color: white;
-    transition: 0.5s;
-    font-size: 18px;
-    font-weight: 500;
-    transition: 0.5s;
-}
-
-.slide-box.quarto button:hover{
-    background-color: white;
-    color:#A1A249
 }
 
 .secao1{
@@ -266,7 +233,7 @@ header ul li a:hover:after{
     font-weight: 500;
 }
 
-.txtsecao1-1e1-3 button:hover, .txtsecao1-2 button:hover{
+.txtsecao1-1e1-3 button:hover, .txtsecao1-2 button:hover, .secao3-1txt button:hover, .secao4 button:hover{
     background-color: #FDF0DC;
     color: #A1A249;
 }
@@ -279,7 +246,7 @@ header ul li a:hover:after{
 }
 
 .secao1-3{
-    padding: 30px 270px 30px 260px;
+    padding: 30px 230px 30px 300px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -288,13 +255,42 @@ header ul li a:hover:after{
 .secao2{
     background-color: #7F4F24;
     width: 100%;
-    height: 650px;
-    padding: 60px;
+    height: 700px;
+    padding: 50px;
     text-align: center;
 }
 
 .secao2 h2{
-    padding-bottom: 10px;
+    color: white;
+    padding-bottom: 15px;
+    font-weight: 700;
+}
+
+.txtsecao2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.secao2 button, .secao3-1txt button, .secao4 button {
+    padding: 10px;
+    border: 1px solid #A1A249;
+    border-radius: 20px;
+    background-color: #A1A249;
+    color: white;
+    transition: 0.5s;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.secao2 button:hover{
+    background-color: #FDF0DC;
+    color: #7F4F24;
+    border: 1px solid #7F4F24;
 }
 
 .secao3{
@@ -322,27 +318,15 @@ header ul li a:hover:after{
     padding: 10px 0;
 }
 
-.secao3-1txt button{
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #A1A249;
-    border-radius: 20px;
-    background-color: #A1A249;
-    color: white;
-    transition: 0.5s;
-    font-size: 20px;
-}
-
-.secao3-1txt button:hover{
-    background-color: #FDF0DC;
-    color: #A1A249;
-}
-
 .secao3-2{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.secao3-2 .banner1:hover, .secao3-2 .banner2:hover, .secao3-2 .banner3:hover{
+    transform: scale(1.1);
 }
 
 .secao3-2 .banner1, .secao3-2 .banner3{
@@ -356,16 +340,17 @@ header ul li a:hover:after{
     justify-content: center;
     text-align: center;
     border-radius: 30px;
+    transition: 0.3s ease-in-out;
 }
 
-.secao3-2 .banner1 h3{
+.secao3-2 .banner1 h3, .secao3-2 .banner2 h3, .secao3-2 .banner3 h3{
     color: white;
     font-size: 25px;
 }
 
-.secao3-2 .banner1 p{
+.secao3-2 .banner1 p, .secao3-2 .banner2 p, .secao3-2 .banner3 p{
     color: white;
-    font-weight: 500;
+    font-weight: 450;
     font-size: 18px;
 }
 
@@ -380,21 +365,88 @@ header ul li a:hover:after{
     justify-content: center;
     text-align: center;
     border-radius: 30px;
-}
-
-.secao3-2 .banner2 h3, .secao3-2 .banner3 h3{
-    color: white;
-    font-size: 25px;
-}
-
-.secao3-2 .banner2 p, .secao3-2 .banner3 p{
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
+    transition: 0.3s ease-in-out;
 }
 
 .secao3img img{
     border-radius: 30px;
+}
+
+.imgfundosecao4{
+    width: 100%;
+    height: 300px;
+    background-image: url(imagens/imgsecao4.png);
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+
+.secao4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.secao4-1{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 80px 80px 40px 80px;
+}
+
+.secao4-1 .banner1, .secao4-1 .banner2, .secao4-1 .banner3 {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.secao4-1 .banner1:hover, .secao4-1 .banner2:hover, .secao4-1 .banner3:hover{
+    transform: scale(1.1);
+}
+
+.secao4-1 .banner1 .banner1txt, .secao4-1 .banner3 .banner3txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 25px 0;
+    background-color: rgb(127,79,36,69%);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.secao4-1 .banner1 .banner1txt h3, .secao4-1 .banner2 .banner2txt h3, .secao4-1 .banner3 .banner3txt h3{
+    font-size: 22px;
+}
+
+.secao4-1 .banner1 .banner1txt p, .secao4-1 .banner2 .banner2txt p, .secao4-1 .banner3 .banner3txt p{
+    font-size: 16px;
+}
+
+.secao4-1 .banner2 .banner2txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    padding: 25px 0 35px 0;
+    background-color: rgb(127,79,36,69%);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px
 }
 
 .rodape{
